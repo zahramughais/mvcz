@@ -5,12 +5,17 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css" />
+<!-- YOUR own local CSS -->
+<link rel="stylesheet" href="/css/main.css"/>
 <title>Reading books</title>
 </head>
 <body>
-	<h1><c:out value="${book.title}"/></h1>
-	<p>Description: <c:out value="${book.description}"/></p>
-	<p>Language: <c:out value="${book.language}"/></p>
-	<p>Number Of Pages: <c:out value="${book.numberOfPages}"/></p>
+	<div class="container">        
+		<h1><c:out value="${book.title}"/></h1>
+		<p>Description: <c:out value="${book.description}"/></p>
+		<p>Language: <c:out value="${book.language}"/></p>
+		<p>Number Of Pages: <c:out value="${book.numberOfPages}"/></p>
+    </div>
 </body>
 </html>
